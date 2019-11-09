@@ -10,7 +10,9 @@ public class Interv3 {
 		
 		String str="Hatem Numan";
 		
-		System.out.println(str.length());
+		int str1=str.length();
+		
+		System.out.println(str1);
 
 	}
 
