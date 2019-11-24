@@ -5,19 +5,27 @@ public class intev8 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int a, b, c;
-		a=0;
-		b=1;
-		for(int i=0; i<10; i++) {
+		// Palindrome 3,5,7,11,...etc
+		
+		int num=10;
+		boolean pali=true;
+		
+		for (int i=2;i<num; i++) {
 			
-			System.out.print(a+ " ");
-			
-			c=a+b;
-			a=b;
-			b=c;
-			
+			if (num%i==0) {
+				
+				pali=false;
+				break;
+			}
 		}
-
+		
+		if (pali) {
+			
+			System.out.println("My Number is Palindrome");
+		}else {
+			
+			System.out.println("My Number is not Palindrom");
+		}
 	}
 
 }

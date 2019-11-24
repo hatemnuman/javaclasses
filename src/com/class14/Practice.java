@@ -3,21 +3,19 @@ package com.class14;
 public class Practice {
 
 	public static void main(String[] args) {
-
-		String str = " Hatem Mahmoud Ismail Numan";
-		String[] str1 = str.split(" ");
-
-		for (int i = 0; i < str1.length; i++) {
-			System.out.print(str1[i]+" ");
-		}
 		
-		System.out.println();
+		String a="hello";
+		String b="world";
 		
-		for (int  j=str1.length-1;  j>0 ; j--) {
-			
-			System.out.print(str1[j]+" ");
-			
-		}
+		a=a+b;
+		
+		b=a.substring(0, a.length()-b.length());
+		a=a.substring(b.length());
+		
+		System.out.println("a was hello and now "+a);
+		System.out.println("b was world and now "+b);
+		
+
 		
 
 	}
