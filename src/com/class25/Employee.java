@@ -1,15 +1,12 @@
 package com.class25;
 
-public class Employee {
-	
+public class Employee extends Person {
+
 	int salary;
-	static String companyName;
-	
-	void work() {
-		
-		System.out.println("I work ");
+
+	public void employee() {
+
+		System.out.println(name + " " + lastName + " " + age + " " + salary);
 	}
-	
-	void 
 
 }
